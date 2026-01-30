@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>重要公告 - 阿爾伊股份有限公司</title>
+  <meta name="description" content="阿爾伊股份有限公司重要公告">
+  <link rel="icon" href="https://storage.googleapis.com/myre/web/favicon/app-icon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fef2f2',
+              100: '#fee2e2',
+              200: '#fecaca',
+              300: '#fca5a5',
+              400: '#f87171',
+              500: '#ef4444',
+              600: '#dc2626',
+              700: '#b91c1c',
+              800: '#991b1b',
+              900: '#7f1d1d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+    
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+    
+    .notice-paper {
+      background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+      box-shadow: 
+        0 4px 6px -1px rgb(0 0 0 / 0.1),
+        0 2px 4px -2px rgb(0 0 0 / 0.1),
+        0 0 0 1px rgb(0 0 0 / 0.05);
+    }
+    
+    .content-placeholder {
+      border: 2px dashed #d1d5db;
+      background: repeating-linear-gradient(
+        45deg,
+        #f9fafb,
+        #f9fafb 10px,
+        #f3f4f6 10px,
+        #f3f4f6 20px
+      );
+    }
+  </style>
+</head>
+<body class="min-h-dvh bg-gray-100 flex items-center justify-center p-4 sm:p-8">
+  
+  <main class="w-full max-w-3xl">
+
+    <!-- 公司 Logo -->
+    <img 
+      src="https://storage.googleapis.com/myre/web/logo-primary.svg" 
+      alt="阿爾伊股份有限公司" 
+      class="h-16 mx-auto mb-4"
+    >
+
+    <!-- 公告卡片 -->
+    <article class="notice-paper rounded-2xl overflow-hidden">
+      
+      <!-- 頂部裝飾橫幅 -->
+      <header class="bg-brand-600 px-6 py-5 flex flex-col items-center gap-4">
+
+        <div class="flex items-center gap-3">
+          <h1 class="text-white text-2xl font-bold tracking-wide text-balance">重要公告</h1>
+        </div>
+      </header>
+      
+      <!-- 公告主體 -->
+      <div class="px-6 sm:px-10 py-8 sm:py-10">
+        
+        <!-- ====== 公告內容區域 ====== -->
+        <!-- 這裡放置實際公告內容 -->
+        <!-- 可以是圖片、文字，或圖片+文字組合 -->
+        
+        <section class="space-y-6">
+          
+          <!-- 預留內容區塊 (開發時顯示，正式上線時替換) -->
+          <div class="content-placeholder rounded-xl p-8 min-h-64 flex flex-col items-center justify-center text-gray-400">
+            <svg class="size-14 mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+            <p class="text-base font-medium">公告內容區域</p>
+            <p class="text-sm mt-1">可放置圖片、文字或簽名等</p>
+          </div>
+          
+          <!-- 
+          ===== 實際內容範例 =====
+          
+          【純文字版本】
+          <div class="prose prose-gray max-w-none">
+            <p class="text-gray-700 leading-relaxed text-pretty">
+              親愛的顧客與合作夥伴：
+            </p>
+            <p class="text-gray-700 leading-relaxed text-pretty">
+              感謝您長期以來對阿爾伊的支持與愛護...
+            </p>
+          </div>
+          
+          【純圖片版本】
+          <div class="flex justify-center">
+            <img src="notice-content.png" alt="公告內容" class="max-w-full rounded-lg">
+          </div>
+          
+          【圖片+簽名版本】
+          <div class="space-y-6">
+            <p class="text-gray-700 leading-relaxed text-pretty">
+              公告內文...
+            </p>
+            <div class="flex justify-end">
+              <img src="signature.png" alt="執行長簽名" class="h-16">
+            </div>
+          </div>
+          -->
+          
+        </section>
+        
+        <!-- ====== 公告內容區域結束 ====== -->
+        
+        <!-- 日期與署名 -->
+        <footer class="mt-10 pt-6 border-t border-gray-200">
+           <div class="text-gray-500 text-base text-center">
+              <p>阿爾伊股份有限公司 <span class="text-sm">RE RED ENVELOPE CO., LTD.</span></p>
+              <p class="text-gray-400 text-sm mt-1">敬上</p>
+            </div>
+        </footer>
+        
+      </div>
+      
+      <!-- 底部吉祥物裝飾 -->
+      <div class="px-6 pb-6">
+        <div class="flex justify-center">
+          <img 
+            src="./Gemini_Generated_Image_kg7uxikg7uxikg7u.png" 
+            alt="瑞瑞" 
+            class="h-32 sm:h-64 object-contain"
+          >
+        </div>
+        <p class="text-center text-brand-400 text-sm mt-3 font-medium">感謝您一路相伴 ♥</p>
+      </div>
+      
+    </article>
+    
+    <!-- 頁尾資訊 -->
+    <footer class="mt-6 text-center">
+      <p class="text-gray-400 text-xs">
+        Copyright © 2026 RE RED ENVELOPE CO., LTD.
+      </p>
+      <a 
+        href="https://myre.life/" 
+        class="text-brand-500 hover:text-brand-600 text-xs mt-1 inline-block transition-colors"
+        rel="noopener"
+      >
+        myre.life
+      </a>
+    </footer>
+    
+  </main>
+  
+</body>
+</html>
