@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>重要公告 - 阿爾伊股份有限公司</title>
-  <meta name="description" content="阿爾伊股份有限公司重要公告">
+  <title>結束營運暨啟動破產清算公告 - 阿爾伊股份有限公司</title>
+  <meta name="description" content="RE·X 結束營運暨啟動破產清算公告">
   <link rel="icon" href="https://storage.googleapis.com/myre/web/favicon/app-icon.ico">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -30,53 +30,37 @@
     }
   </script>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
     
     body {
       font-family: 'Noto Sans TC', sans-serif;
+      background:
+        radial-gradient(1200px 600px at 20% -10%, #f8f7f5 0%, transparent 60%),
+        radial-gradient(900px 500px at 100% 0%, #f0ece8 0%, transparent 55%),
+        #f3f1ef;
     }
     
     .notice-paper {
-      background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
-      box-shadow: 
-        0 4px 6px -1px rgb(0 0 0 / 0.1),
-        0 2px 4px -2px rgb(0 0 0 / 0.1),
-        0 0 0 1px rgb(0 0 0 / 0.05);
+      background: linear-gradient(180deg, #ffffff 0%, #f7f4f2 100%);
+      border: 1px solid rgba(90, 63, 56, 0.15);
+      box-shadow:
+        0 24px 60px -40px rgba(0, 0, 0, 0.45),
+        0 1px 0 rgba(255, 255, 255, 0.6) inset;
     }
     
-    .content-placeholder {
-      border: 2px dashed #d1d5db;
-      background: repeating-linear-gradient(
-        45deg,
-        #f9fafb,
-        #f9fafb 10px,
-        #f3f4f6 10px,
-        #f3f4f6 20px
-      );
+    .title-serif {
+      /* font-family: 'Noto Serif TC', serif; */
+      letter-spacing: 0.04em;
     }
     
-    .tab-btn {
-      transition: background-color 0.15s, color 0.15s;
-    }
-    .tab-btn[aria-selected="true"] {
-      background-color: white;
-      color: #dc2626;
-      box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
-    }
-    .tab-btn[aria-selected="false"] {
-      background-color: transparent;
-      color: rgba(255, 255, 255, 0.8);
-    }
-    .tab-btn[aria-selected="false"]:hover {
-      background-color: rgba(255, 255, 255, 0.1);
-    }
-    
-    .tab-panel[hidden] {
-      display: none;
+    .notice-rule {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(90, 63, 56, 0.5), transparent);
     }
   </style>
 </head>
-<body class="min-h-dvh bg-gray-100 flex items-center justify-center p-4 sm:p-8">
+<body class="min-h-dvh flex items-center justify-center p-4 sm:p-8 text-gray-800">
   
   <main class="w-full max-w-3xl">
 
@@ -88,161 +72,65 @@
     >
 
     <!-- 公告卡片 -->
-    <article class="notice-paper rounded-2xl overflow-hidden">
+    <article class="notice-paper rounded-3xl overflow-hidden">
       
       <!-- 頂部裝飾橫幅 -->
-      <header class="bg-brand-600 px-6 py-5 flex flex-col items-center gap-4">
-        <div class="flex items-center gap-3">
-          <h1 class="text-white text-2xl font-bold tracking-wide text-balance text-center">
-            重要公告
-            <span class="block text-base font-medium opacity-90">Important Notice</span>
-          </h1>
-        </div>
-        
-        <!-- Tab 切換 -->
-        <nav 
-          role="tablist" 
-          aria-label="公告對象"
-          class="flex gap-1 bg-brand-700/50 p-1 rounded-lg"
-        >
-          <button
-            role="tab"
-            id="tab-consumer"
-            aria-selected="true"
-            aria-controls="panel-consumer"
-            class="tab-btn px-4 py-2 rounded-md text-sm font-medium"
-          >
-            消費者 Consumer
-          </button>
-          <button
-            role="tab"
-            id="tab-merchant"
-            aria-selected="false"
-            aria-controls="panel-merchant"
-            class="tab-btn px-4 py-2 rounded-md text-sm font-medium"
-          >
-            合作店家 Merchant
-          </button>
-        </nav>
-        
+      <header class="bg-brand-600 px-6 py-8 flex flex-col items-center gap-4">
+        <!-- <p class="text-brand-200 text-sm tracking-[0.3em]">NOTICE</p> -->
+        <h1 class="title-serif text-brand-50 text-2xl sm:text-3xl font-semibold text-balance text-center">
+          RE·X 結束營運暨啟動破產清算公告
+        </h1>
+        <!-- <div class="notice-rule w-32"></div>
+        <p class="text-brand-200 text-sm">阿爾伊股份有限公司</p> -->
       </header>
       
       <!-- 公告主體 -->
-      <div class="px-6 sm:px-10 py-8 sm:py-10">
-        
-        <!-- ====== 消費者公告內容 ====== -->
-        <section 
-          role="tabpanel" 
-          id="panel-consumer" 
-          aria-labelledby="tab-consumer"
-          class="tab-panel space-y-6"
-        >
-          
-          <!-- 預留內容區塊 (開發時顯示，正式上線時替換) -->
-          <div class="content-placeholder rounded-xl p-8 min-h-64 flex flex-col items-center justify-center text-gray-400">
-            <svg class="size-14 mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-            </svg>
-            <p class="text-base font-medium">消費者公告內容區域</p>
-            <p class="text-sm mt-1">Consumer Notice Content Area</p>
-          </div>
-          
-          <!-- 
-          ===== 消費者公告實際內容範例 =====
-          
-          <div class="space-y-4">
-            <p class="text-gray-700 leading-relaxed text-pretty">
-              親愛的消費者您好：
-            </p>
-            <p class="text-gray-500 leading-relaxed text-pretty text-sm">
-              Dear Valued Customer,
-            </p>
-            <p class="text-gray-700 leading-relaxed text-pretty">
-              感謝您長期以來對阿爾伊的支持與愛護...
-            </p>
-            <p class="text-gray-500 leading-relaxed text-pretty text-sm">
-              Thank you for your continued support...
-            </p>
-          </div>
-          -->
-          
+      <div class="px-6 sm:px-10 py-10 sm:py-12">
+        <section class="space-y-6 text-[15px] sm:text-base leading-relaxed">
+          <p class="title-serif text-lg text-gray-800 font-medium">致 所有珍視 RE·X 的合作夥伴與用戶：</p>
+          <p>這是一封我們最不願寫下，卻必須面對的信。</p>
+          <p>懷著極度沉痛與歉疚的心情，我們必須向大家宣布：RE·X 即日起停止營運，並將正式啟動破產清算程序。</p>
+          <p>回首過去 3,200 多個日子，RE·X (RE紅包) 誕生於一個純粹而美好的願景——我們希望打造一個最具創意的點數整合平台，用科技解決用戶零碎點數的痛點，同時成為店家營收成長的堅實夥伴。這九年來，我們與無數店家並肩作戰，見證了許多用戶透過平台獲得的小確幸，這一直是支撐我們前行的最大動力。</p>
+          <p>然而，創業的道路比想像中更為崎嶇。九年來，儘管團隊日夜匪懈，我們仍面臨了累積的巨額虧損。過去這段時間，我們更是傾盡所有，試圖在動盪的國際局勢與地緣政治的嚴峻挑戰下尋求資金挹注。</p>
+          <p>我們真的很想活下來。直到發出這封公告的前一刻，我們耗盡了公司最後一分資源，背負了沈重的債務，窮盡了一切可能的辦法，只為了守住對大家的承諾。但遺憾的是，資金的枯竭讓我們已無力再維持平台的運作。</p>
+          <p>我們深知，這個突如其來的消息，對於信任我們的合作店家與忠實用戶來說，不僅是震驚，更是一種傷害。對於造成大家的損失，以及辜負了大家的期待，我們感到萬分心痛與自責。請相信，這絕對不是我們所期望的結局，我們在此向每一位受影響的店家與用戶致上最深、最誠摯的歉意！</p>
+          <p>雖然 RE·X 的現有團隊已無力回天，但我們深信這套歷經九年打磨的點數整合系統，仍具有其獨特的市場價值與技術實力。</p>
+          <p class="text-gray-800 font-medium">為了盡最大努力維護店家與用戶的權益，我們誠摯地公開尋求有實力的集團或企業進行併購。若有願景相投的企業願意接手，讓 RE·X 的技術與服務得以延續，這將是我們在黑夜中唯一的期盼。我們將全力配合任何潛在收購方的評估，只盼能為用戶爭取到最好的結果。</p>
+          <p>即刻起，公司將依法進入破產清算流程。這是一個痛苦的終點，也是我們不得不面對的責任。</p>
+          <p>再次感謝這九年來每一位曾給予 RE·X 機會的店家，以及每一位使用過我們服務的用戶。</p>
+          <p class="title-serif text-lg text-gray-800">我們感到非常抱歉，我們真的盡力了，對不起！</p>
         </section>
-        
-        <!-- ====== 合作店家公告內容 ====== -->
-        <section 
-          role="tabpanel" 
-          id="panel-merchant" 
-          aria-labelledby="tab-merchant"
-          class="tab-panel space-y-6"
-          hidden
-        >
-          
-          <!-- 預留內容區塊 (開發時顯示，正式上線時替換) -->
-          <div class="content-placeholder rounded-xl p-8 min-h-64 flex flex-col items-center justify-center text-gray-400">
-            <svg class="size-14 mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-            </svg>
-            <p class="text-base font-medium">合作店家公告內容區域</p>
-            <p class="text-sm mt-1">Merchant Notice Content Area</p>
-          </div>
-          
-          <!-- 
-          ===== 合作店家公告實際內容範例 =====
-          
-          <div class="space-y-4">
-            <p class="text-gray-700 leading-relaxed text-pretty">
-              親愛的合作夥伴您好：
-            </p>
-            <p class="text-gray-500 leading-relaxed text-pretty text-sm">
-              Dear Partner,
-            </p>
-            <p class="text-gray-700 leading-relaxed text-pretty">
-              感謝您與阿爾伊的合作...
-            </p>
-            <p class="text-gray-500 leading-relaxed text-pretty text-sm">
-              Thank you for your partnership...
-            </p>
-          </div>
-          -->
-          
-        </section>
-        
+
         <!-- 日期與署名 -->
-        <footer class="mt-10 pt-6 border-t border-gray-200">
-          <div class="text-gray-500 text-base text-center">
-            <p>阿爾伊股份有限公司</p>
-            <p class="text-gray-400 text-sm">RE RED ENVELOPE CO., LTD.</p>
-            <p class="text-gray-400 text-sm mt-2">敬上 Sincerely</p>
+        <footer class="mt-10 pt-6 border-t border-gray-200 text-center">
+          <div class="text-gray-600 text-base">
+            <p class="title-serif">RE·X 全體經營團隊 敬上</p>
+            <p class="text-gray-400 text-sm mt-1">RE RED ENVELOPE CO., LTD.</p>
+            <p class="text-gray-500 text-sm mt-3">2026 年 2 月 14 日</p>
           </div>
         </footer>
         
-      </div>
-      
-      <!-- 底部吉祥物裝飾 -->
-      <div class="px-6 pb-6">
-        <div class="flex justify-center">
-          <img 
-            src="./Gemini_Generated_Image_kg7uxikg7uxikg7u.png" 
-            alt="瑞瑞" 
-            class="h-32 sm:h-64 object-contain"
+        <div class="mt-10 flex justify-center">
+          <img
+            src="./Gemini_Generated_Image_qlzv1sqlzv1sqlzv.png"
+            alt="致歉與告別"
+            class="h-48 sm:h-60 object-contain"
           >
         </div>
-        <p class="text-center text-brand-400 text-sm mt-3 font-medium">
-          感謝您一路相伴 ♥
-          <span class="block text-xs opacity-80">Thank you for being with us</span>
-        </p>
+
+
+        
       </div>
-      
     </article>
     
     <!-- 頁尾資訊 -->
     <footer class="mt-6 text-center">
-      <p class="text-gray-400 text-xs">
+      <p class="text-gray-400 text-[10px]">
         Copyright © 2026 RE RED ENVELOPE CO., LTD.
       </p>
       <a 
         href="https://myre.life/" 
-        class="text-brand-500 hover:text-brand-600 text-xs mt-1 inline-block transition-colors"
+        class="text-brand-600 hover:text-brand-700 text-xs mt-1 inline-block transition-colors"
         rel="noopener"
       >
         myre.life
@@ -250,77 +138,6 @@
     </footer>
     
   </main>
-  
-  <script>
-    // Tab 切換邏輯
-    const tabs = document.querySelectorAll('[role="tab"]');
-    const panels = document.querySelectorAll('[role="tabpanel"]');
-    
-    function switchTab(tabId) {
-      const targetTab = document.getElementById(`tab-${tabId}`);
-      if (!targetTab) return;
-      
-      // 更新 tabs
-      tabs.forEach(tab => {
-        const isSelected = tab === targetTab;
-        tab.setAttribute('aria-selected', isSelected);
-      });
-      
-      // 更新 panels
-      panels.forEach(panel => {
-        const isVisible = panel.id === `panel-${tabId}`;
-        panel.hidden = !isVisible;
-      });
-      
-      // 更新 URL hash（不觸發頁面跳轉）
-      history.replaceState(null, '', `#${tabId}`);
-    }
-    
-    // Tab 按鈕點擊事件
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        const tabId = tab.id.replace('tab-', '');
-        switchTab(tabId);
-      });
-    });
-    
-    // 鍵盤導航
-    tabs.forEach(tab => {
-      tab.addEventListener('keydown', (e) => {
-        const tabList = Array.from(tabs);
-        const currentIndex = tabList.indexOf(tab);
-        let newIndex;
-        
-        if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
-          newIndex = currentIndex === 0 ? tabList.length - 1 : currentIndex - 1;
-          e.preventDefault();
-        } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
-          newIndex = currentIndex === tabList.length - 1 ? 0 : currentIndex + 1;
-          e.preventDefault();
-        }
-        
-        if (newIndex !== undefined) {
-          tabList[newIndex].focus();
-          const tabId = tabList[newIndex].id.replace('tab-', '');
-          switchTab(tabId);
-        }
-      });
-    });
-    
-    // 從 URL hash 初始化
-    function initFromHash() {
-      const hash = window.location.hash.slice(1); // 移除 #
-      const validTabs = ['consumer', 'merchant'];
-      const tabId = validTabs.includes(hash) ? hash : 'consumer';
-      switchTab(tabId);
-    }
-    
-    // 監聽 hash 變化
-    window.addEventListener('hashchange', initFromHash);
-    
-    // 頁面載入時初始化
-    initFromHash();
-  </script>
   
 </body>
 </html>
