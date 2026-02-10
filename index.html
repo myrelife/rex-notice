@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RE·X 營運終止公告 - 阿爾伊股份有限公司</title>
-  <meta name="description" content="RE·X 營運終止公告 - 關於營運停止與破產程序">
+  <title>RE·X 營運止步與轉讓公告 - 阿爾伊股份有限公司</title>
+  <meta name="description" content="RE·X 營運止步與轉讓公告 - 關於營運停止與轉讓程序">
   <link rel="icon" href="https://storage.googleapis.com/myre/web/favicon/app-icon.ico">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -58,11 +58,24 @@
       height: 1px;
       background: linear-gradient(90deg, transparent, rgba(90, 63, 56, 0.5), transparent);
     }
+
+    html[lang="en"] [data-lang="zh"],
+    html[lang="zh-TW"] [data-lang="en"] {
+      display: none !important;
+    }
   </style>
 </head>
 <body class="min-h-dvh flex items-center justify-center p-4 sm:p-8 text-gray-800">
   
   <main class="w-full max-w-3xl">
+
+    <!-- 語系切換 -->
+    <div class="flex justify-end mb-2">
+      <div id="lang-switcher" class="inline-flex rounded-full bg-white/80 backdrop-blur border border-gray-200 p-0.5 text-sm">
+        <button data-value="zh-TW" class="lang-tab rounded-full px-3 py-1 font-medium transition-all">繁中</button>
+        <button data-value="en" class="lang-tab rounded-full px-3 py-1 font-medium transition-all">Eng</button>
+      </div>
+    </div>
 
     <!-- 公司 Logo -->
     <img 
@@ -75,35 +88,59 @@
     <article class="notice-paper rounded-3xl overflow-hidden">
       
       <!-- 頂部裝飾橫幅 -->
-      <header class="bg-brand-600 px-6 py-8 flex flex-col items-center gap-4">
+      <header class="bg-brand-600 px-3 sm:px-6 py-4 sm:py-8 flex flex-col items-center gap-4">
         <h1 class="title-serif text-white text-2xl sm:text-3xl font-semibold text-balance text-center">
-          【 <span class="font-sans">RE·X</span> 營運終止公告 】
+          <span data-lang="zh">九年的守護，碎心的告別：<span class="font-sans">RE·X</span> 營運止步與轉讓公告</span>
+          <span data-lang="en">A Heartfelt Farewell: Notice of Operational Suspension and Strategic Business Transfer for <span class="font-sans">RE·X</span></span>
         </h1>
       </header>
       
       <!-- 公告主體 -->
       <div class="px-6 sm:px-10 py-10 sm:py-12">
-        <section class="space-y-6 text-[15px] sm:text-base leading-relaxed">
-          <p class="title-serif text-base text-gray-800 font-medium">致 所有 <span class="font-sans">RE·X</span> 的合作店家與用戶：</p>
-          <p class="text-gray-800 font-semibold">這是一場我們戰至最後一刻，卻不得不放手的告別</p>
-          <p class="text-gray-800 font-semibold">寫下這封信，是我們九年來最艱難、也最痛心的時刻。我們必須在此沉痛地宣布：<span class="font-sans">RE·X</span> 將停止營運，並依法進入破產程序</p>
-          <p class="text-gray-800 font-semibold">這不是一個輕率的決定，而是我們在努力到最後一刻、耗盡最後一分力氣後，不得不面對的結局</p>
-          <p>過去這段時間，面對長期鉅額虧損與嚴重受到地緣政治、政局動盪影響的募資困境，<span class="font-sans">RE·X</span> 團隊沒有一天放棄過。我們嘗試了所有的轉型方案、拜訪了無數的投資機構，甚至由創辦團隊傾盡私人資產投入，只為了守住這個我們共同打造的點數生態圈，守住對您的承諾。</p>
-          <p>我們拼命地想活下來，不僅是為了公司，更是因為知道每一點回饋、每一筆交易背後，都是店家辛苦的經營與用戶對我們的信賴。然而，現實嚴重的資金缺口與龐大債務壓力已超過了我們所能負荷的極限。我們用盡了各種方法，嘗試各種策略，卻仍無力回天...</p>
-          <p>我們深知，這個消息會讓您感到震驚、不解甚至憤怒。對於因此造成的影響與困擾，我們謙卑的以最誠摯的心，向您致上最深的歉意！您們的支持與信任，是我們一路走來最珍貴的陪伴，如今卻無法繼續守護這份承諾，心中滿是愧疚。我們真的不願意辜負大家，但現實艱難的困境迫使我們必須在此停下腳步。</p>
-          <p>在進入破產程序的同時，我們並未完全熄滅希望。我們非常期盼若有具備實力的集團願意接手收購，讓 <span class="font-sans">RE·X</span> 的機制與價值延續，我們將全力配合，希望能為合作店家與用戶爭取到權益延續的一線生機而不至於消逝。</p>
-          <p>非常感恩您這九年來的支持與愛護；謝謝您曾經與我們同行，雖然旅程在此劃下句點，但我們的初心與願景，將永遠留存在心中。願未來的某一天，這份理想能以另一種形式重生，再次為您帶來價值。</p>
-          <p class="text-gray-800 font-semibold">無法陪您走到最後，再次致上最深、最沉痛的歉意！</p>
-        </section>
 
-        <!-- 日期與署名 -->
-        <footer class="mt-10 pt-6 text-right">
-          <div class="text-gray-600 text-base">
-            <p class="title-serif font-semibold"><span class="font-sans">RE·X</span> 經營團隊 敬上</p>
-            <!-- <p class="text-gray-400 text-sm mt-1">RE RED ENVELOPE CO., LTD.</p> -->
-          </div>
-        </footer>
-        
+        <!-- 中文內容 -->
+        <div data-lang="zh">
+          <section class="space-y-6 text-[15px] sm:text-base leading-relaxed">
+            <p class="title-serif text-base text-gray-800 font-medium">致 最親愛的合作店家與用戶朋友們：</p>
+            <p class="text-gray-800 font-semibold">這是一封我們掙扎許久、忍著劇痛才寫下的信</p>
+            <p class="text-gray-800 font-semibold">如果可以，我們多麼希望 <span class="font-sans">RE·X</span>（RE紅包）的故事能一直寫下去。這九年來，我們與各位並肩度過了無數挑戰。從最初一個微小的創意點子，到成為一個服務成千上萬用戶與店家的平台，<span class="font-sans">RE·X</span> 對我們而言，不只是一間公司，更是一個承載著夢想與承諾的孩子</p>
+            <p><span class="text-gray-800 font-semibold">這一次，我們真的已經傾盡所有。</span>在過去這段艱難的日子裡，受限於劇烈動盪的地緣政治環境，原本預計的募資計劃遭到重挫。為了守住對大家的承諾，我們用盡了最後一分資金，甚至不惜負債累累，只求能撐過寒冬。直到今天，我們不得不面對殘酷的現實——<span class="font-sans">RE·X</span> 的財務能量已燃燒殆盡，我們必須沈痛地宣佈：即日起，<span class="font-sans">RE·X</span> 將停止一切現有營運</p>
+            <p><span class="text-gray-800 font-semibold">對不起，讓大家失望了。</span>想到這個消息會帶給各位的震驚與不解，我們感到萬分心碎與慚愧。我們深知，這背後是無數店家的信任，以及廣大用戶對我們的支持。對於沒能陪各位走得更遠，造成大家的困擾與損害，我們除了深深一鞠躬，心中滿是無法言喻的歉疚</p>
+            <p><span class="text-gray-800 font-semibold">最後的期盼：尋求強大的羽翼，守護各位的權益。</span>雖然 <span class="font-sans">RE·X</span> 現階段的營運被迫止步，但這套累積九年的技術系統與營運成果，是我們最珍貴的資產。我們不甘心這一切付諸流水，更不忍心讓大家的權益受損</p>
+            <p>因此，我們正積極尋求各界有實力的集團公司進行「營業讓與」或「策略性併購」。我們願意以最開放、最低的姿態，尋求強而有力的企業收購接手</p>
+            <p>這不僅是 <span class="font-sans">RE·X</span> 的重生機會，更是我們守護大家權益的最後希望。若能有更強大的羽翼願意承接，讓平台得以延續，這將是我們在黑暗中唯一能感到的慰藉</p>
+            <p><span class="text-gray-800 font-semibold">最後的請求</span>　在這個最痛苦的時刻，懇請各位店家與用戶能給予我們一點體諒。我們正在與時間賽跑，接洽所有可能的收購方，只為了能給各位一個更好的交代</p>
+            <p>感謝這九年來生命中有你們。對於這份沉重的抱歉，我們會用盡餘力去尋求轉機</p>
+          </section>
+          <footer class="mt-10 pt-6 text-right">
+            <div class="text-gray-600 text-base">
+              <p class="title-serif font-semibold"><span class="font-sans">RE·X</span> 經營團隊 敬上</p>
+            </div>
+          </footer>
+        </div>
+
+        <!-- English Content -->
+        <div data-lang="en">
+          <section class="space-y-6 text-[15px] sm:text-base leading-relaxed">
+            <p class="title-serif text-base text-gray-800 font-medium">To our most cherished partner stores and users,</p>
+            <p class="text-gray-800 font-semibold">This is a letter we have struggled to write, and we do so today with a truly heavy heart.</p>
+            <p class="text-gray-800 font-semibold">If it were at all possible, we would have given anything to keep the story of <span class="font-sans">RE·X</span> going. Over the past 9 years of shared journey — we have stood side-by-side with you to overcome countless challenges. From a small, innovative idea to a platform serving thousands of businesses and users, <span class="font-sans">RE·X</span> has never been just a company to us; it has been a dream we nurtured with every ounce of our being.</p>
+            <p><span class="text-gray-800 font-semibold">We have exhausted every resource to keep this promise.</span> In recent times, faced with an unprecedented and volatile geopolitical environment, our planned fundraising efforts were severely disrupted. To honor our commitments to you, we exhausted every bit of available capital and took on a significant financial burden, desperately hoping to weather this storm. Regrettably, we have reached a point where our financial energy is entirely depleted. It is with profound sadness that we must announce: Effective immediately, <span class="font-sans">RE·X</span> will suspend all current operations.</p>
+            <p><span class="text-gray-800 font-semibold">We are profoundly sorry for failing you.</span> The thought of the shock and confusion this news will cause you breaks our hearts. We are deeply aware that behind <span class="font-sans">RE·X</span> lies the trust of countless partner stores and the loyal support of our users. For our inability to carry this mission further, and for the distress and inconvenience this causes, we offer our most sincere and humble apologies.</p>
+            <p><span class="text-gray-800 font-semibold">Our Final Hope: Seeking a Stronger Wing to Protect Your Interests.</span> While our current operations must come to a halt, the technological architecture and the extensive service network we have built over 9 years remain our most valuable assets. We cannot bear to see these efforts vanish, nor can we endure the thought of your interests being left unprotected.</p>
+            <p>Therefore, we are actively and openly seeking opportunities for a &ldquo;Business Transfer&rdquo; or &ldquo;Strategic Acquisition.&rdquo; We are reaching out to robust corporate groups with a humble and open mind, hoping to find a partner to acquire and take over the <span class="font-sans">RE·X</span> platform.</p>
+            <p>This is not only a chance for <span class="font-sans">RE·X</span> to be reborn but, more importantly, it is our final hope to safeguard your rights and interests. If a stronger entity can take the lead and allow our services to continue, it would be the only solace we can find in this dark hour.</p>
+            <p><span class="text-gray-800 font-semibold">A Final Request</span> — In this incredibly painful time, we humbly ask for your understanding. We are racing against the clock to contact all potential acquirers, driven solely by the desire to provide a better resolution for everyone involved.</p>
+            <p>Thank you for being part of our lives for these 9 years. We will dedicate every remaining effort to seeking a turning point for this transition.</p>
+          </section>
+          <footer class="mt-10 pt-6 text-right">
+            <div class="text-gray-600 text-base">
+              <p class="title-serif font-semibold">With deepest gratitude and sincerest apologies,</p>
+              <p class="title-serif font-semibold mt-1">The <span class="font-sans">RE·X</span> Management Team</p>
+            </div>
+          </footer>
+        </div>
+
         <div class="mt-10 flex justify-center">
           <img
             src="./Gemini_Generated_Image_qlzv1sqlzv1sqlzv.png"
@@ -112,8 +149,6 @@
           >
         </div>
 
-
-        
       </div>
     </article>
     
@@ -132,6 +167,42 @@
     </footer>
     
   </main>
-  
+
+  <script>
+    (function () {
+      var browserLang = navigator.language || (navigator.languages && navigator.languages[0]) || 'zh-TW';
+      var defaultLang = browserLang.startsWith('zh') ? 'zh-TW' : 'en';
+      var tabs = document.querySelectorAll('#lang-switcher .lang-tab');
+
+      function setLang(lang) {
+        document.documentElement.lang = lang;
+        tabs.forEach(function (tab) {
+          if (tab.dataset.value === lang) {
+            tab.classList.add('bg-brand-600', 'text-white', 'shadow-sm');
+            tab.classList.remove('text-gray-500', 'hover:text-gray-700');
+          } else {
+            tab.classList.remove('bg-brand-600', 'text-white', 'shadow-sm');
+            tab.classList.add('text-gray-500', 'hover:text-gray-700');
+          }
+        });
+        if (lang === 'en') {
+          document.title = 'RE·X Operational Suspension & Transfer Notice';
+          document.querySelector('meta[name="description"]').setAttribute('content', 'RE·X Notice of Operational Suspension and Strategic Business Transfer');
+        } else {
+          document.title = 'RE·X 營運止步與轉讓公告 - 阿爾伊股份有限公司';
+          document.querySelector('meta[name="description"]').setAttribute('content', 'RE·X 營運止步與轉讓公告 - 關於營運停止與轉讓程序');
+        }
+      }
+
+      setLang(defaultLang);
+
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          setLang(tab.dataset.value);
+        });
+      });
+    })();
+  </script>
+
 </body>
 </html>
